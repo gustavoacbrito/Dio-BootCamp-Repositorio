@@ -18,14 +18,14 @@ public class ComprasLivraria {
 
         double totalLivros1 = livro1.calculaTotalCompra();
         double totalLivros2 = livro2.calculaTotalCompra();
-        double totalCompra = totalLivros1+totalLivros2;
+        double totalCompra = totalLivros1 + totalLivros2;
         System.out.println("Valor total da compra: " + String.format("%.2f", totalCompra));
 
         //TODO: Considerando os objetos "livro1" e "livro2", calcule o número de livros comprados.
         int quantidadeLivros1 = livro1.getQuantidade();
         int quantidadeLivros2 = livro2.getQuantidade();
-        int totalQuantidade = quantidadeLivros1+quantidadeLivros2;
-        System.out.println("Numero de livros comprados: "+totalQuantidade);
+        int totalQuantidade = quantidadeLivros1 + quantidadeLivros2;
+        System.out.println("Numero de livros comprados: " + totalQuantidade);
 
         //TODO: Imprima as linhas necessárias conforme a saída deste desafio.
         livro1.mostraMensagem();
@@ -41,17 +41,18 @@ public class ComprasLivraria {
             this.preco = preco;
             this.quantidade = quantidade;
         }
-        public int getQuantidade(){
+
+        public int getQuantidade() {
             return this.quantidade;
         }
 
 
-        public double calculaTotalCompra(){
-            return this.preco * this.quantidade ;
+        public double calculaTotalCompra() {
+            return this.preco * this.quantidade;
 
         }
 
-        public void mostraMensagem(){
+        public void mostraMensagem() {
             System.out.println("Obrigado por comprar na nossa livraria!");
         }
 

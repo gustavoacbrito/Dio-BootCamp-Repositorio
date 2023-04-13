@@ -1,6 +1,7 @@
 package ClassesAprendizados;
 
 import java.util.Scanner;
+
 public class GeekStore {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

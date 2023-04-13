@@ -8,7 +8,7 @@ public class Carro {
     private int capacidadeTanque;
 
 
-    Carro(){
+    Carro() {
         this.capacidadeTanque = 0;
         this.marca = "Nissan";
         this.modelo = "Versa";
@@ -16,19 +16,51 @@ public class Carro {
         this.portas = 4;
     }
 
-    public void setCapacidadeTanque(int capacidadeTanque) {
-        this.capacidadeTanque = capacidadeTanque;
+    public String getMarca() {
+        return marca;
     }
-    public int getCapacidadeTanque(){
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public int getPortas() {
+        return portas;
+    }
+
+    public void setPortas(int portas) {
+        this.portas = portas;
+    }
+
+    public int getCapacidadeTanque() {
         return this.capacidadeTanque;
     }
 
+    public void setCapacidadeTanque(int capacidadeTanque) {
+        this.capacidadeTanque = capacidadeTanque;
+    }
 
-    public void calcularCustoAbastecimento(double precoGasolina){
+    public void calcularCustoAbastecimento(double precoGasolina) {
 
 
         double result = getCapacidadeTanque() * precoGasolina;
-        System.out.println("O custo de abastecimento do tanque de "+ getCapacidadeTanque() + " litros "+ " é de "+ result );
+        System.out.println("O custo de abastecimento do tanque de " + getCapacidadeTanque() + " litros " + " é de " + result);
 
     }
 
