@@ -16,14 +16,13 @@ public class RecebeAuxilio {
         System.out.println("Digite quantidade de dependentes");
         int dependentes = scanner.nextInt();
 
-        double mediaSalarialPerCapita = salarioMensal/dependentes;
+        double mediaSalarialPerCapita = salarioMensal / dependentes;
 
-        if (mediaSalarialPerCapita<=mediaSalarioPerCapitaMaxima || salarioMensal <= salarioBaixaRenda) {
+        if (mediaSalarialPerCapita <= mediaSalarioPerCapitaMaxima || salarioMensal <= salarioBaixaRenda) {
             System.out.println("Recebe Auxílio");
-        }else{
+        } else {
             System.out.println("Não recebe Auxílio");
         }
-
 
 
     }

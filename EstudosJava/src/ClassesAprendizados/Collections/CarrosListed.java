@@ -95,4 +95,6 @@ class ComparatorIdade implements Comparator<Carro> {
     public int compare(Carro c1, Carro c2) {
         return Integer.compare(c1.getAnoFabricacao(), c2.getAnoFabricacao());
     }
+
 }
+
